@@ -1,0 +1,36 @@
+﻿<Window x:Class="Craps.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Craps"
+        mc:Ignorable="d"
+        Title="Craps" Icon="crapsIcon.jpg" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="Craps.jpg"/>
+        </Grid.Background>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+            <Button Name="Cube1" Content="" FontSize="20" Height="100" Width="100" Margin="20, 0, 20, 20">
+                <Button.Effect>
+                    <DropShadowEffect ShadowDepth="10" BlurRadius="15"/>
+                </Button.Effect>
+            </Button>
+            <Button Name="Cube2" Content="" FontSize="20" Height="100" Width="100" Margin="20, 20, 20, 0">
+                <Button.Effect>
+                    <DropShadowEffect ShadowDepth="10" BlurRadius="15"/>
+                </Button.Effect>
+            </Button>
+        </StackPanel>
+
+        <TextBlock Name="Info" Text="Для начала игры нажмите Start" Foreground="White" FontSize="14" FontWeight="Bold" Grid.Column="1" HorizontalAlignment="Center" Margin="20"/>
+        <Button Name="Start" Content="Start" Height="40" Width="160" Grid.Column="1" VerticalAlignment="Bottom" Margin="0, 0, 0, 50" Click="Start_Click"/>
+    </Grid>
+</Window>
