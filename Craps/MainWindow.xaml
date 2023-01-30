@@ -30,7 +30,20 @@
             </Button>
         </StackPanel>
 
-        <TextBlock Name="Info" Text="Для начала игры нажмите Start" Foreground="White" FontSize="14" FontWeight="Bold" Grid.Column="1" HorizontalAlignment="Center" Margin="20"/>
+        <TextBlock Name="Info" Text="Чтобы играть нажмите Start" Foreground="White" FontSize="14" FontWeight="Bold" Grid.Column="1" HorizontalAlignment="Center" Margin="20"/>
+        <Button Name="Roll" Height="40" Width="160" Content="Roll the dice" Grid.Column="1" Click="Roll_Click"/>
         <Button Name="Start" Content="Start" Height="40" Width="160" Grid.Column="1" VerticalAlignment="Bottom" Margin="0, 0, 0, 50" Click="Start_Click"/>
+
+        <StackPanel Grid.Column="2">
+            <TextBlock Name="PlayerName1" Text="Player 1" Foreground="White" FontSize="30" FontWeight="Bold" Margin="20, 50, 20, 0"/>
+            <TextBlock Name="Turns1" Text="Turns: 0" Foreground="White" FontSize="20" FontWeight="Bold" Margin="20, 5, 20, 5"/>
+            <TextBlock Name="Points1" Text="+0" Foreground="White" FontSize="20" FontWeight="Bold" Margin="20, 5, 20, 5"/>
+            <TextBlock Name="Total1" Text="Total: 0" Foreground="White" FontSize="20" FontWeight="Bold" Margin="20, 5, 20, 5"/>
+            
+            <TextBlock Name="PlayerName2" Text="Player 2" Foreground="White" FontSize="30" FontWeight="Bold" Margin="20, 50, 20, 0"/>
+            <TextBlock Name="Turns2" Text="Turns: 0" Foreground="White" FontSize="20" FontWeight="Bold" Margin="20, 5, 20, 5"/>
+            <TextBlock Name="Points2" Text="+0" Foreground="White" FontSize="20" FontWeight="Bold" Margin="20, 5, 20, 5"/>
+            <TextBlock Name="Total2" Text="Total: 0" Foreground="White" FontSize="20" FontWeight="Bold" Margin="20, 5, 20, 5"/>
+        </StackPanel>
     </Grid>
 </Window>
